@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<?import CounterLoops.model.OnlyNumberTextField?>
+<AnchorPane prefHeight="546.0" prefWidth="900.0" style="-fx-background-color: #FAFAFA;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CounterLoops.controllers.Controller">
+    <children>
+        <AnchorPane layoutX="-2.0" layoutY="-3.0" prefHeight="59.0" prefWidth="915.0" style="-fx-background-color: #2E3348;" AnchorPane.topAnchor="-3.0">
+            <children>
+                <Label layoutX="14.0" layoutY="6.0" prefHeight="42.0" prefWidth="241.0" text="Reglanizer.kids" textFill="WHITE" AnchorPane.topAnchor="6.0">
+                    <font>
+                        <Font name="Arial Black" size="28.0" />
+                    </font>
+                </Label>
+                <Label layoutX="98.0" layoutY="40.0" prefHeight="15.0" prefWidth="157.0" text="Keep calm and knit sweater" textFill="#f8f5f5">
+                    <font>
+                        <Font name="Arial Black" size="10.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <TabPane layoutY="56.0" prefHeight="490.0" prefWidth="910.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.rightAnchor="0.0">
+            <tabs>
+                <Tab fx:id="tabOne" text="Ввод данных">
+                    <content>
+                        <AnchorPane fx:id="enterParams" minHeight="0.0" minWidth="0.0" prefHeight="454.0" prefWidth="863.0">
+                            <children>
+                                <Text layoutX="19.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ввод параметров:">
+                                    <font>
+                                        <Font name="Arial Black" size="18.0" />
+                                    </font>
+                                </Text>
+                                <GridPane layoutX="19.0" layoutY="56.0" prefHeight="337.0" prefWidth="284.0">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="ALWAYS" maxWidth="200.0" prefWidth="180.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="60.0" minWidth="10.0" prefWidth="60.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <OnlyNumberTextField fx:id="oneEnterParamField" alignment="CENTER" prefHeight="25.0" prefWidth="99.0" GridPane.columnIndex="1" />
+                                        <OnlyNumberTextField fx:id="twoEnterParamField" alignment="CENTER" prefHeight="25.0" prefWidth="99.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                        <OnlyNumberTextField fx:id="fourEnterParamField" alignment="CENTER" prefHeight="25.0" prefWidth="99.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                        <OnlyNumberTextField fx:id="fiveEnterParamField" alignment="CENTER" prefHeight="25.0" prefWidth="99.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                        <OnlyNumberTextField fx:id="sixEnterParamField" alignment="CENTER" prefHeight="25.0" prefWidth="99.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                        <OnlyNumberTextField fx:id="sevenEnterParamField" alignment="CENTER" prefHeight="25.0" prefWidth="99.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                        <OnlyNumberTextField fx:id="eightEnterParamField" alignment="CENTER" prefHeight="25.0" prefWidth="99.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                        <OnlyNumberTextField fx:id="nineEnterParamField" alignment="CENTER" prefHeight="25.0" prefWidth="99.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1. Обхват головы">
+                                            <font>
+                                                <Font name="Arial Italic" size="14.0" />
+                                            </font>
+                                        </Text>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="2. Обхват груди" GridPane.rowIndex="2">
+                                            <font>
+                                                <Font name="Arial Italic" size="14.0" />
+                                            </font>
+                                        </Text>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="3. Длина регланной линии" GridPane.rowIndex="3">
+                                            <font>
+                                                <Font name="Arial Italic" size="14.0" />
+                                            </font>
+                                        </Text>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="4. Длина изделия (от 7го шейного позвонка)" wrappingWidth="168.13671875" GridPane.rowIndex="4">
+                                            <font>
+                                                <Font name="Arial Italic" size="14.0" />
+                                            </font>
+                                        </Text>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="5. Длина руки от подмышки до запястья" wrappingWidth="157.9208984375" GridPane.rowIndex="5">
+                                            <font>
+                                                <Font name="Arial Italic" size="14.0" />
+                                            </font>
+                                        </Text>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="6. Обхват кисти" GridPane.rowIndex="6">
+                                            <font>
+                                                <Font name="Arial Italic" size="14.0" />
+                                            </font>
+                                        </Text>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="7. Ширина резинки" GridPane.rowIndex="7">
+                                            <font>
+                                                <Font name="Arial Italic" size="14.0" />
+                                            </font>
+                                        </Text>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="8. Количество петель одной регланной линии" wrappingWidth="157.9208984375" GridPane.rowIndex="8">
+                                            <font>
+                                                <Font name="Arial Italic" size="14.0" />
+                                            </font>
+                                        </Text>
+                                        <CheckBox fx:id="headCheckBox" mnemonicParsing="false" prefWidth="402.0" text="Окружность горловины" wrapText="true" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+                                    </children>
+                                </GridPane>
+                                <Text layoutX="487.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Образец и параметры изделия:">
+                                    <font>
+                                        <Font name="Arial Black" size="18.0" />
+                                    </font>
+                                </Text>
+                                <GridPane layoutX="479.0" layoutY="64.0" prefHeight="193.0" prefWidth="298.0" AnchorPane.bottomAnchor="211.0" AnchorPane.leftAnchor="479.0" AnchorPane.rightAnchor="116.0" AnchorPane.topAnchor="64.0">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="145.0" minWidth="10.0" prefWidth="115.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="60.0" minWidth="10.0" prefWidth="60.0" />
+                                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="39.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="60.0" minWidth="10.0" prefWidth="60.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints maxHeight="62.0" minHeight="38.0" prefHeight="38.0" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="59.0" minHeight="37.0" prefHeight="37.0" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="50.0" minHeight="28.0" prefHeight="39.0" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="84.0" minHeight="15.0" prefHeight="27.0" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="84.0" minHeight="22.0" prefHeight="48.0" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="58.0" minHeight="0.0" prefHeight="37.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Количество провязанных петель (без кромочных)" wrappingWidth="217.3154296875">
+                                            <font>
+                                                <Font name="Arial Italic" size="14.0" />
+                                            </font>
+                                        </Text>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Количество провязанных рядов" GridPane.rowIndex="1">
+                                            <font>
+                                                <Font name="Arial Italic" size="14.0" />
+                                            </font>
+                                        </Text>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Данные в сантиметрах:" GridPane.rowIndex="2">
+                                            <font>
+                                                <Font name="Arial Bold" size="14.0" />
+                                            </font>
+                                        </Text>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="До ВТО" GridPane.rowIndex="4">
+                                            <font>
+                                                <Font name="Arial Italic" size="14.0" />
+                                            </font>
+                                        </Text>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="После ВТО" GridPane.rowIndex="5">
+                                            <font>
+                                                <Font name="Arial Italic" size="14.0" />
+                                            </font>
+                                        </Text>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="см" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                            <font>
+                                                <Font name="Arial Italic" size="14.0" />
+                                            </font>
+                                        </Text>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="см" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                            <font>
+                                                <Font name="Arial Italic" size="14.0" />
+                                            </font>
+                                        </Text>
+                                        <OnlyNumberTextField fx:id="untilLoopsEnterField1" alignment="CENTER" GridPane.columnIndex="3" />
+                                        <OnlyNumberTextField fx:id="untilRowsEnterField1" alignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                        <OnlyNumberTextField fx:id="afterLoopsEnterField1" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                        <OnlyNumberTextField fx:id="afterRowsEnterField1" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                        <OnlyNumberTextField fx:id="afterLoopsEnterField2" alignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                                        <OnlyNumberTextField fx:id="afterRowsEnterField2" alignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Петли(см)" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                            <font>
+                                                <Font name="Arial Italic" size="14.0" />
+                                            </font>
+                                        </Text>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ряды(см)" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                                            <font>
+                                                <Font name="Arial Italic" size="14.0" />
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </GridPane>
+                                <Text layoutX="487.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Свобода облегания:">
+                                    <font>
+                                        <Font name="Arial Black" size="18.0" />
+                                    </font>
+                                </Text>
+                                <Button fx:id="calculateButton" layoutX="564.0" layoutY="417.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" text="Рассчитать">
+                                    <font>
+                                        <Font name="Arial" size="12.0" />
+                                    </font>
+                                </Button>
+                                <RadioButton fx:id="checkDirectClassic" layoutX="488.0" layoutY="350.0" mnemonicParsing="false" text="Прямой классический силуэт" />
+                                <RadioButton fx:id="checkDirectClassicPlus" layoutX="488.0" layoutY="380.0" mnemonicParsing="false" text="Прямой &quot;спорт&quot;" />
+                                <Button fx:id="saveFileButton" layoutX="20.0" layoutY="417.0" mnemonicParsing="false" text="Сохранить мерки в файл" />
+                                <Button fx:id="openFileButton" layoutX="220.0" layoutY="417.0" mnemonicParsing="false" text="Открыть файл с мерками" />
+                                <Button fx:id="restoreDensityButton" layoutX="479.0" layoutY="270.0" mnemonicParsing="false" text="Предыдущая плотность" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab fx:id="tabTwo" text="Плотность и набор">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="530.0" prefWidth="893.0">
+                            <children>
+                                <Text layoutX="34.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Плотность вязания после ВТО" wrappingWidth="214.9208984375">
+                                    <font>
+                                        <Font name="Arial Italic" size="14.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="34.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Коэффициент усадки" wrappingWidth="190.39999999999998">
+                                    <font>
+                                        <Font name="Arial Italic" size="14.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="251.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Петли">
+                                    <font>
+                                        <Font name="Arial Italic" size="14.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="354.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ряды">
+                                    <font>
+                                        <Font name="Arial Italic" size="14.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="58.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Распределение петель в наборном ряду:">
+                                    <font>
+                                        <Font name="Arial Black" size="14.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="34.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Сколько петель набрать на бросовую нить" wrappingWidth="188.9208984375">
+                                    <font>
+                                        <Font name="Arial Italic" size="14.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="30.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Распределение набранных петель:" wrappingWidth="196.9208984375">
+                                    <font>
+                                        <Font name="Arial Italic" size="14.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="58.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- для спинки и переда по" wrappingWidth="177.9208984375">
+                                    <font>
+                                        <Font name="Arial Italic" size="14.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="58.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- для рукавов по" wrappingWidth="177.9208984375">
+                                    <font>
+                                        <Font name="Arial Italic" size="14.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="58.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- регланные линии (сколько петель на одной регланной линии)" wrappingWidth="187.9208984375">
+                                    <font>
+                                        <Font name="Arial Italic" size="14.0" />
+                                    </font>
+                                </Text>
+                                <TextField fx:id="aDensityViewLoops1" alignment="CENTER" editable="false" layoutX="244.0" layoutY="42.0" maxWidth="60.0" prefHeight="28.0" prefWidth="60.0" />
+                                <TextField fx:id="aDensityViewLoops2" alignment="CENTER" editable="false" layoutX="244.0" layoutY="74.0" prefHeight="28.0" prefWidth="60" />
+                                <TextField fx:id="aDensityViewRows1" alignment="CENTER" editable="false" layoutX="341.0" layoutY="42.0" prefHeight="28.0" prefWidth="60" />
+                                <TextField fx:id="aDensityViewRows2" alignment="CENTER" editable="false" layoutX="341.0" layoutY="74.0" prefHeight="28.0" prefWidth="60" />
+                                <TextField fx:id="aNumberJunkLoops" alignment="CENTER" editable="false" layoutX="308.0" layoutY="157.0" prefHeight="28.0" prefWidth="60" />
+                                <TextField fx:id="aNumberBackNFrontLoops" alignment="CENTER" editable="false" layoutX="308.0" layoutY="236.0" prefHeight="28.0" prefWidth="60" />
+                                <TextField fx:id="aNumberSleevesLoops" alignment="CENTER" editable="false" layoutX="308.0" layoutY="274.0" prefHeight="28.0" prefWidth="60" />
+                                <TextField fx:id="aNumberReglanLinesLoops" alignment="CENTER" editable="false" layoutX="308.0" layoutY="314.0" prefHeight="28.0" prefWidth="60" />
+                                <Text layoutX="239.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Распределение петель в наборном ряду:">
+                                    <font>
+                                        <Font name="Arial Black" size="14.0" />
+                                    </font>
+                                </Text>
+                                <GridPane alignment="CENTER" layoutX="28.0" layoutY="394.0" prefHeight="23.0" prefWidth="777.0">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="60.0" minWidth="60.0" prefWidth="60.0" />
+                                        <ColumnConstraints minWidth="10.0" prefWidth="70.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="70.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="70.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="70.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="70.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="70.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="70.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="70.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="М" translateX="7.0" GridPane.columnIndex="1">
+                                            <font>
+                                                <Font name="Arial Black" size="14.0" />
+                                            </font>
+                                        </Text>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="М" translateX="7.0" GridPane.columnIndex="3">
+                                            <font>
+                                                <Font name="Arial Black" size="14.0" />
+                                            </font>
+                                        </Text>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="М" translateX="7.0" GridPane.columnIndex="5">
+                                            <font>
+                                                <Font name="Arial Black" size="14.0" />
+                                            </font>
+                                        </Text>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="М" translateX="7.0" GridPane.columnIndex="7">
+                                            <font>
+                                                <Font name="Arial Black" size="14.0" />
+                                            </font>
+                                        </Text>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="М" translateX="7.0" GridPane.columnIndex="9">
+                                            <font>
+                                                <Font name="Arial Black" size="14.0" />
+                                            </font>
+                                        </Text>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="М" translateX="7.0" GridPane.columnIndex="11">
+                                            <font>
+                                                <Font name="Arial Black" size="14.0" />
+                                            </font>
+                                        </Text>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="М" translateX="7.0" GridPane.columnIndex="13">
+                                            <font>
+                                                <Font name="Arial Black" size="14.0" />
+                                            </font>
+                                        </Text>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="М" translateX="7.0" GridPane.columnIndex="15">
+                                            <font>
+                                                <Font name="Arial Black" size="14.0" />
+                                            </font>
+                                        </Text>
+                                        <TextField fx:id="aNumberBackNFrontLoopsMarker1" alignment="CENTER" editable="false" maxWidth="60.0" prefHeight="28.0" prefWidth="60.0" />
+                                        <TextField fx:id="aNumberReglanLinesLoopsMarker1" alignment="CENTER" editable="false" maxWidth="60.0" prefHeight="28.0" prefWidth="60" GridPane.columnIndex="2" />
+                                        <TextField fx:id="aNumberSleevesLoopsMarker1" alignment="CENTER" editable="false" prefHeight="28.0" prefWidth="60" GridPane.columnIndex="4" />
+                                        <TextField fx:id="aNumberReglanLinesLoopsMarker2" alignment="CENTER" editable="false" prefHeight="28.0" prefWidth="60" GridPane.columnIndex="6" />
+                                        <TextField fx:id="aNumberBackNFrontLoopsMarker2" alignment="CENTER" editable="false" prefHeight="28.0" prefWidth="60" GridPane.columnIndex="8" />
+                                        <TextField fx:id="aNumberReglanLinesLoopsMarker3" alignment="CENTER" editable="false" prefHeight="28.0" prefWidth="60" GridPane.columnIndex="10" />
+                                        <TextField fx:id="aNumberSleevesLoopsMarker2" alignment="CENTER" editable="false" prefHeight="28.0" prefWidth="60" GridPane.columnIndex="12" />
+                                        <TextField fx:id="aNumberReglanLinesLoopsMarker4" alignment="CENTER" editable="false" prefHeight="28.0" prefWidth="60" GridPane.columnIndex="14" />
+                                    </children>
+                                </GridPane>
+                                <TextField fx:id="aNumberBackNFrontLoopsMarker3" alignment="CENTER" editable="false" layoutX="798.0" layoutY="392.0" prefHeight="26.0" prefWidth="64.0" />
+                                <Circle fill="#ff0800" layoutX="14.0" layoutY="405.0" radius="7.0" stroke="#ff0800" strokeType="INSIDE" />
+                                <Line endX="-9.599992752075195" endY="-3.200042724609375" fill="#ff0800" layoutX="34.0" layoutY="440.0" startX="-19.999988555908203" startY="-35.0" stroke="#ff0800" />
+                                <Label layoutX="27.0" layoutY="429.0" prefHeight="18.0" prefWidth="165.0" text="Начало ряда (спинка)">
+                                    <font>
+                                        <Font name="Arial Italic" size="14.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab fx:id="tabTree" text="Расчеты реглана">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <Text layoutX="40.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Количество рядов ростка(прибавка в каждом втором ряду)" wrappingWidth="430.72088623046875">
+                                    <font>
+                                        <Font name="Arial Italic" size="14.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="40.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Контрольная цифра: количество петель на спицах после ростка" wrappingWidth="467.3208923339844">
+                                    <font>
+                                        <Font name="Arial Italic" size="14.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="40.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Количество рядов тела с прибавкой в каждом" wrappingWidth="334.72088623046875">
+                                    <font>
+                                        <Font name="Arial Italic" size="14.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="40.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. Количество рядов тела с прибавкой в каждом" wrappingWidth="329.32086181640625">
+                                    <font>
+                                        <Font name="Arial Italic" size="14.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="40.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7. Подрезы" wrappingWidth="256.9208984375">
+                                    <font>
+                                        <Font name="Arial Italic" size="14.0" />
+                                    </font>
+                                </Text>
+                                <TextField fx:id="aNumberSproutRows" alignment="CENTER" editable="false" layoutX="511.0" layoutY="19.0" prefHeight="28.0" prefWidth="60" />
+                                <TextField fx:id="aNumberReglan2mRows" alignment="CENTER" editable="false" layoutX="511.0" layoutY="61.0" prefHeight="28.0" prefWidth="60" />
+                                <TextField fx:id="aNumberReglan3mRows" alignment="CENTER" editable="false" layoutX="511.0" layoutY="101.0" prefHeight="28.0" prefWidth="60" />
+                                <TextField fx:id="aNumberReglanBody2mRows" alignment="CENTER" editable="false" layoutX="511.0" layoutY="141.0" prefHeight="28.0" prefWidth="60" />
+                                <TextField fx:id="aNumberUndercuts" alignment="CENTER" editable="false" layoutX="511.0" layoutY="261.0" prefHeight="28.0" prefWidth="60" />
+                                <TextField fx:id="aNumberRows3Plus" alignment="CENTER" editable="false" layoutX="381.0" layoutY="101.0" maxWidth="60.0" prefHeight="28.0" prefWidth="60.0" />
+                                <TextField fx:id="aNumberRows4Plus" alignment="CENTER" editable="false" layoutX="380.0" layoutY="139.0" prefHeight="28.0" prefWidth="60.0" />
+                                <Text layoutX="467.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ряду" wrappingWidth="43.9208984375">
+                                    <font>
+                                        <Font name="Arial Italic" size="14.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="467.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ряду" wrappingWidth="43.9208984375">
+                                    <font>
+                                        <Font name="Arial Italic" size="14.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="40.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5. Количество рядов рукава с прибавкой в каждом" wrappingWidth="338.120849609375">
+                                    <font>
+                                        <Font name="Arial Italic" size="14.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="40.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6. Количество рядов рукава с прибавкой в каждом" wrappingWidth="339.9208984375">
+                                    <font>
+                                        <Font name="Arial Italic" size="14.0" />
+                                    </font>
+                                </Text>
+                                <TextField fx:id="aNumberRows5Plus" alignment="CENTER" editable="false" layoutX="381.0" layoutY="181.0" prefHeight="28.0" prefWidth="60.0" />
+                                <TextField fx:id="aNumberRows6Plus" alignment="CENTER" editable="false" layoutX="381.0" layoutY="222.0" prefHeight="28.0" prefWidth="60.0" />
+                                <TextField fx:id="aNumberReglan5mRows" alignment="CENTER" editable="false" layoutX="511.0" layoutY="181.0" prefHeight="28.0" prefWidth="60" />
+                                <TextField fx:id="aNumberReglan6mRows" alignment="CENTER" editable="false" layoutX="511.0" layoutY="222.0" prefHeight="28.0" prefWidth="60" />
+                                <Text layoutX="467.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ряду" wrappingWidth="43.9208984375">
+                                    <font>
+                                        <Font name="Arial Italic" size="14.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="467.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ряду" wrappingWidth="43.9208984375">
+                                    <font>
+                                        <Font name="Arial Italic" size="14.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="40.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Общее количество прибавок реглана для тела" wrappingWidth="342.9208984375">
+                                    <font>
+                                        <Font name="Arial Italic" size="14.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="40.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Общее количество прибавок реглана для рукава" wrappingWidth="344.9208984375">
+                                    <font>
+                                        <Font name="Arial Italic" size="14.0" />
+                                    </font>
+                                </Text>
+                                <TextField fx:id="aTotalNumberOfEditsOfReglan" alignment="CENTER" editable="false" layoutX="511.0" layoutY="371.0" prefHeight="28.0" prefWidth="60" />
+                                <TextField fx:id="aTotalNumberOfEditsOfSleeve" alignment="CENTER" editable="false" layoutX="511.0" layoutY="411.0" prefHeight="28.0" prefWidth="60" />
+                                <Text layoutX="41.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Для контроля:" wrappingWidth="342.9208984375">
+                                    <font>
+                                        <Font name="Arial Bold" size="14.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="63.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Не отнимать ряды ростка от рядов регланной линии!" wrappingWidth="396.32086181640625">
+                                    <font>
+                                        <Font name="Arial Bold" size="14.0" />
+                                    </font>
+                                </Text>
+                                <TextField fx:id="aTotalNumberOfReglan" alignment="CENTER" editable="false" layoutX="787.0" layoutY="61.0" prefHeight="28.0" prefWidth="60" />
+                                <Text layoutX="640.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Длина элементов до ВТО(см):" wrappingWidth="230.9208984375">
+                                    <font>
+                                        <Font name="Arial Bold" size="14.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="640.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Ширина тела" wrappingWidth="126.9208984375">
+                                    <font>
+                                        <Font name="Arial Italic" size="14.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="640.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Ширина рукава" wrappingWidth="126.9208984375">
+                                    <font>
+                                        <Font name="Arial Italic" size="14.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="640.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Длина реглана" wrappingWidth="126.9208984375">
+                                    <font>
+                                        <Font name="Arial Italic" size="14.0" />
+                                    </font>
+                                </Text>
+                                <TextField fx:id="aTotalNumberOfBody" alignment="CENTER" editable="false" layoutX="787.0" layoutY="101.0" prefHeight="28.0" prefWidth="60" />
+                                <TextField fx:id="aTotalNumberOfSleeve" alignment="CENTER" editable="false" layoutX="787.0" layoutY="139.0" prefHeight="28.0" prefWidth="60" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Расчеты тела и рукава">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="712.0">
+                            <children>
+                                <Text layoutX="46.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Длина изделия:">
+                                    <font>
+                                        <Font name="Arial Black" size="14.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="40.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Сколько рядов провязать прямо от подреза" wrappingWidth="256.9208984375">
+                                    <font>
+                                        <Font name="Arial Italic" size="14.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="40.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Сколько рядов резинки провязать" wrappingWidth="256.9208984375">
+                                    <font>
+                                        <Font name="Arial Italic" size="14.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="46.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Рукав:">
+                                    <font>
+                                        <Font name="Arial Black" size="14.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="40.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Количество рядов рукава от подрезов" wrappingWidth="280.9208984375">
+                                    <font>
+                                        <Font name="Arial Italic" size="14.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="40.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Контрольная цифра. Количество петель рукава" wrappingWidth="256.9208984375">
+                                    <font>
+                                        <Font name="Arial Italic" size="14.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="40.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Количество парных убавок" wrappingWidth="256.9208984375">
+                                    <font>
+                                        <Font name="Arial Italic" size="14.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="40.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. Через сколько рядов делать убавки" wrappingWidth="256.9208984375">
+                                    <font>
+                                        <Font name="Arial Italic" size="14.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="40.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5. Сколько убавок перед резинкой, распределить равномерно в ряду перед резинкой" wrappingWidth="256.9208984375">
+                                    <font>
+                                        <Font name="Arial Italic" size="14.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="40.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6. Ряды резинки" wrappingWidth="256.9208984375">
+                                    <font>
+                                        <Font name="Arial Italic" size="14.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="498.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ворот резинка:">
+                                    <font>
+                                        <Font name="Arial Black" size="14.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="490.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Ширина резинки" wrappingWidth="256.9208984375">
+                                    <font>
+                                        <Font name="Arial Italic" size="14.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="498.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ворот кеттлевка:">
+                                    <font>
+                                        <Font name="Arial Black" size="14.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="490.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Количетсво рядов на ворот" wrappingWidth="256.9208984375">
+                                    <font>
+                                        <Font name="Arial Italic" size="14.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="365.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ряды">
+                                    <font>
+                                        <Font name="Arial Italic" size="14.0" />
+                                    </font>
+                                </Text>
+                                <Text layoutX="729.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ряды">
+                                    <font>
+                                        <Font name="Arial Italic" size="14.0" />
+                                    </font>
+                                </Text>
+                                <TextField fx:id="aNumberUndercutsToRows" alignment="CENTER" editable="false" layoutX="352.0" layoutY="39.0" prefHeight="28.0" prefWidth="60" />
+                                <TextField fx:id="aNumberElasticRows" alignment="CENTER" editable="false" layoutX="352.0" layoutY="89.0" prefHeight="28.0" prefWidth="60" />
+                                <TextField fx:id="aNumberSleeveRows" alignment="CENTER" editable="false" layoutX="352.0" layoutY="151.0" prefHeight="28.0" prefWidth="60" />
+                                <TextField fx:id="aNumberTwistRows" alignment="CENTER" editable="false" layoutX="352.0" layoutY="230.0" prefHeight="28.0" prefWidth="60" />
+                                <TextField fx:id="aNumberSleeveTwistRows" alignment="CENTER" editable="false" layoutX="352.0" layoutY="189.0" prefHeight="28.0" prefWidth="60" />
+                                <TextField fx:id="aNumberTwistBeforeElasticRows" alignment="CENTER" editable="false" layoutX="352.0" layoutY="270.0" prefHeight="28.0" prefWidth="60" />
+                                <TextField fx:id="aNumberTwistLoops" alignment="CENTER" editable="false" layoutX="352.0" layoutY="314.0" prefHeight="28.0" prefWidth="60" />
+                                <TextField fx:id="aNumberElasticSleeve" alignment="CENTER" editable="false" layoutX="352.0" layoutY="357.0" prefHeight="28.0" prefWidth="60" />
+                                <TextField fx:id="aWidthElastic" alignment="CENTER" editable="false" layoutX="716.0" layoutY="45.0" prefHeight="28.0" prefWidth="60" />
+                                <TextField fx:id="aNumberNeckRows" alignment="CENTER" editable="false" layoutX="716.0" layoutY="116.0" prefHeight="28.0" prefWidth="60.0" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>
